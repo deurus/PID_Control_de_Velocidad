@@ -5,6 +5,8 @@ En esta entrada, exploraremos una implementación básica y fácil de entender d
 <h2>Esquema de conexiones</h2>
 <p align="center">
   <img src="https://garikoitz.info/blog/wp-content/uploads/2024/01/Motor_encoder_v1_bb-1024x803.png" width="450" alt="conexiones">
+  <br>
+  <img src="https://garikoitz.info/blog/wp-content/uploads/2024/01/PXL_20240122_205339192-1024x768.jpg" width="450" alt="conexiones">
 </p>
 
 <h2>Esquema de control</h2>
@@ -20,4 +22,8 @@ En el esquema de control hay dos componentes principales identificados:
 
 El motor se pone en marcha y su velocidad de rotación es capturada por el encoder. Esta velocidad es enviada al controlador PID, que compara la velocidad real (variable de proceso o PV) con la velocidad deseada (punto de consigna o SP). Si hay una diferencia entre la velocidad real y la deseada, el controlador PID calcula una señal de control (OP) adecuada para ajustar la potencia del motor y corregir el error. Esta señal de control ajusta la velocidad del motor, ya sea aumentándola o disminuyéndola para que coincida con el. Este es un proceso continuo y dinámico donde el controlador PID constantemente ajusta la señal de control en respuesta a las variaciones en la velocidad del motor para mantener la velocidad estable. En resumen, este esquema representa un sistema de control en lazo cerrado para mantener una velocidad constante en un motor de corriente continua, utilizando para ello un controlador PID que procesa la información del encoder y ajusta la señal de potencia al motor.
 
+<h2>Vídeos</h2>
+ - Ajuste del filtro EMA: https://www.youtube.com/watch?v=WHUFHLzo4Hg <br>
+ - Prueba de sintonías: https://www.youtube.com/watch?v=KG6Sc1nF7P8 <br>
+ <br>
 Tenéis más información en la entrada del blog: https://garikoitz.info/blog/2024/01/sintonizar-pid-con-arduino-control-de-velocidad-de-un-motor/
